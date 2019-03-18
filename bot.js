@@ -12,12 +12,12 @@ client.on('ready', () => {
 
  
 
-client.on("message", function(message) {
-    if(message.content === "!Aiuto") {
-       client.channels.get(556786013264150530).send('L');
-    }
+bot.on('message', function(message){
+ if(message.content == '!Aiuto')
+ {
+  message.reply('L');
+ }
 });
-
  
 
 // THIS  MUST  BE  THIS  WAY
