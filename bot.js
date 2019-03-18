@@ -10,10 +10,12 @@ client.on('ready', () => {
 
 });
 
-if(input === "js")
-{
-    bot.sendMessage(message, "S @admin has been notified!")
-}
+bot.on('!Aiuto', (message) => {
+    if(message.content == '!owner') {
+        message.channel.send('Hi @"admin" is the owner, do you need help');
+    }
+});
+
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);
