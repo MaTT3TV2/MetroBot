@@ -10,10 +10,20 @@ client.on('ready', () => {
 
 });
 
-client.on('message', msg => {
-  if (msg.content === '!Aiuto' && msg.channel.id == '556786013264150530') {
-    msg.reply('Ha bisogno di aiuto nel canale assistenza @admin');
-  }
+bot.on("message", function (message)
+{
+    var input = message.content.toUpperCase();
+
+    if(input === "HELP!")
+    {
+        let adminRoleObject = message.server.roles.get('name', 'admins');
+        bot.sendMessage(message, `${adminRoleObject} are on the way!`);
+    }
+    if(input === "!Aiuto")
+    {
+        bot.sendMessage(message, "L @admin");
+    }
+
 });
 
 // THIS  MUST  BE  THIS  WAY
