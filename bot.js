@@ -14,13 +14,14 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === ('konj') {
+    if (message.content === '!Aiuto') {
 
-       message.reply('ponh');
+       message.reply('Ha bisogno di aiuto nel canale assistenza @admin');
 
        }
 
 });
+
 
 
  
