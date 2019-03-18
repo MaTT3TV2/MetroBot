@@ -10,15 +10,19 @@ client.on('ready', () => {
 
 });
 
+ 
 
+client.on('message', message => {
 
-bot.on('!Aiuto', (message) => {
-    if(message.content == '!owner') {
-        message.channel.send('Hi @"admin" is the owner, do you need help');
-    }
+    if (message.content === 'ping') {
+
+       message.reply('pong');
+
+       }
+
 });
 
-
+ 
 
 // THIS  MUST  BE  THIS  WAY
 
