@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'konj) {
+    if (message.content === ('konj') {
 
        message.reply('ponh');
 
