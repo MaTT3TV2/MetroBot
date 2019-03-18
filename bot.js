@@ -10,12 +10,16 @@ client.on('ready', () => {
 
 });
 
+
+
 bot.on('!Aiuto', (message) => {
     if(message.content == '!owner') {
         message.channel.send('Hi @"admin" is the owner, do you need help');
     }
 });
 
+
+
 // THIS  MUST  BE  THIS  WAY
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot
