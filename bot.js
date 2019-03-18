@@ -10,11 +10,10 @@ client.on('ready', () => {
 
 });
 
-client.on('aiuto, () => {
+client.on('aiuto', () => {
   var channel = client.channels.get('556786013264150530');
-  channel.sendMessage("l");
+  channel.sendMessage("lll");
 });
-
 
 
 // THIS  MUST  BE  THIS  WAY
