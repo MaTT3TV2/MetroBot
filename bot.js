@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === '!Aiuto' && msg.channel.id == '556786013264150530') {
-    msg.reply('L');
+    msg.reply('Ha bisogno di aiuto nel canale assistenza @Admin');
   }
 });
 
