@@ -12,13 +12,12 @@ client.on('ready', () => {
 
  
 
-client.on('message', message => {
+cclient.on('m', msg => {
+  if (msg.content === 'ping' && msg.channel.id == '556786013264150530') {
+    msg.reply('@"admin"');
+  }
+});
 
-    if (message.content === 'ping') {
-
-       message.reply('pong');
-
-       }
 
 });
 
