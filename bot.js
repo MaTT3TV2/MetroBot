@@ -12,13 +12,12 @@ client.on('ready', () => {
 
  
 
-bot.on('message', function(message){
- if(message.content == '!Aiuto')
- {
-  message.reply('L');
- }
+client.on('message', msg => {
+  if (msg.content === '!Aiuto' && msg.channel.id == '556786013264150530') {
+    msg.reply('L');
+  }
 });
- 
+
 
 // THIS  MUST  BE  THIS  WAY
 
