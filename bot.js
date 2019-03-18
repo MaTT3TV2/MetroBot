@@ -19,13 +19,19 @@ bot.on("message", function (message)
         let adminRoleObject = message.server.roles.get('name', 'admins');
         bot.sendMessage(message, `${adminRoleObject} are on the way!`);
     }
-    if(input === "!Aiuto")
+    if(input === "l")
     {
-        bot.sendMessage(message, "L @admin");
+        bot.sendMessage(message, "@admin");
+    }
+    if(input === "WHO MADE SHADOWBOT?")
+
+    {
+        let ownerUserObject = message.server.members.get('name', 'Techmo3014');
+        bot.sendMessage(message, `${ownerUserObject} made me.`);
     }
 
 });
 
-// THIS  MUST  BE  THIS  WAY
+bot.loginWithToken("NTU2Nzc1NTk3NDY5MDczNDE5.D3FE2Q.6-JrnjNTsRNH1F_GSZL2UUEfEkQ");
 
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot
