@@ -13,7 +13,7 @@ client.on('ready', () => {
  
 
 client.on('!Aiuto', client => {
-    client.channels.get('556786013264150530').send('Ha bisogno di aiuto nel canale assistenza @'admin')
+    client.channels.get('556786013264150530').send('Ha bisogno di aiuto nel canale assistenza @admin')
 })
 
 
