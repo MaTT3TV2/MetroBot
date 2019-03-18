@@ -12,14 +12,10 @@ client.on('ready', () => {
 
  
 
-client.on('message', message => {
-
-    if (message.content === '!Aiuto') {
-
-       message.reply('L'utente {user} ha bisogno di aiuto nel canale assistenza @SupportoUtenti')
-
-       }
-
+client.on("message", function(message) {
+    if(message.content === "ping") {
+        client.channels.get(aiuto).send('L'utente ha bisogno di aiuto nel canale assistenza @Admin');
+    }
 });
 
  
