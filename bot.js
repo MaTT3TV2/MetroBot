@@ -10,13 +10,10 @@ client.on('ready', () => {
 
 });
 
-// client is an instance of Discord.Client
-client.on("message", (message) => {
-if(message.content == "jasj"){ // Check if content of message is "!ping"
-		message.channel.send("ll"); // Call .send() on the channel object the message was sent in
-	}
-});
-
+if(input === "js")
+{
+    bot.sendMessage(message, "S @admin has been notified!")
+}
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);
