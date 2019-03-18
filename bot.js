@@ -10,11 +10,12 @@ client.on('ready', () => {
 
 });
 
-client.on('aiuto', () => {
-  var channel = client.channels.get('556786013264150530');
-  channel.sendMessage("lll");
+// client is an instance of Discord.Client
+client.on("message", (message) => {
+if(message.content == "jasj"){ // Check if content of message is "!ping"
+		message.channel.send("ll"); // Call .send() on the channel object the message was sent in
+	}
 });
-
 
 // THIS  MUST  BE  THIS  WAY
 
