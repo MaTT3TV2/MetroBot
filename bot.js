@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on("message", function(message) {
     if(message.content === "!Aiuto") {
-        client.channels.get(aiuto).send('L'utente ha bisogno di aiuto nel canale assistenza @Admin');
+        guildObj.defaultChannel.send('My Message');
     }
 });
 
