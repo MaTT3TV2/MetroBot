@@ -12,15 +12,9 @@ client.on('ready', () => {
 
  
 
-client.on('message', message => {
-
-    if (message.content === '!Aiuto') {
-
-       message.reply('Ha bisogno di aiuto nel canale assistenza @admin');
-
-       }
-
-});
+client.on('!Aiuto', client => {
+    client.channels.get('556786013264150530').send('Ha bisogno di aiuto nel canale assistenza @'admin')
+})
 
 
 
