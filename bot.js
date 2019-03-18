@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on("message", function(message) {
     if(message.content === "!Aiuto") {
-        client.channels.get("aiut").send("L")
+       client.channels.get(556786013264150530).send('L');
     }
 });
 
