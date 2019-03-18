@@ -16,6 +16,5 @@ client.on('message', msg => {
   }
 });
 
-
 //where BOT_TOKEN is the token of our bot
 client.login('BOT_TOKEN');
