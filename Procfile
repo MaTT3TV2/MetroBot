@@ -1,7 +1,1 @@
-
-
-
-
-
-
 worker: node bot.js
