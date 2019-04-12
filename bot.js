@@ -16,4 +16,4 @@ process.on('message', function(content) {
 	Files.initBotTest(content);
 });
 }
-btoa.login ('NTU3MjY1ODA4MTkxOTEzOTg0.D3Fx0w.tk9h7U4CDfAbNcRObOq9iPWzW_M')
+btoa.login ('NTY2MzA3MzM0NDk4OTQyOTk3.XLDJig.qVY_G5HYKw9p7_oHjHCIkMt5fvQ')
